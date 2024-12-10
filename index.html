@@ -2,32 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Hospital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <section class="main__var">
-        <img class="var--image" src="cruz.avif">
-        <h1 class="var--tittle">Hospital Mendoza</h1>
+    
+    <body>
+        <section class="main__var">
+            <img class="var--image" src="cruz.avif">
+            <h1 class="var--tittle">Hospital Mendoza</h1>
+        </section>
+    
+        <table id="mainTabla">
+            <thead class="styleTabla">
+                <tr class="styleTabla" >
+                    <td class="style--cells">Nombre</td>
+                    <td class="style--cells">Edad</td>
+                    <td class="style--cells">Urgencia</td>
+                </tr>
+            </thead>
+
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+
+        <section id="main--section">
+        <h3 class="subtitulos">Agregar Turnos</h3>
+
+        <form id="form">
+            <input id="input__nombre" type="text" placeholder="Nombre">
+            <input id="input__edad" type="number" placeholder="Edad">
+            <input id="input__urgencia" type="text" placeholder="Urgencia">
+            <input class="button--enviar" type="submit">
+        </form>
+
+        <h3 class="subtitulos">Eliminar Turnos</h3>
+        <form id="form2">
+        <input id="input__eliminar" type="text" placeholder="Nombre">
+        <input class="button--enviar" type="submit">
+        </form>
+
+        <h3 class="subtitulos">Ordenar</h3>
+        <button class="button--enviar" id="button--alfabeticamente">Alfabeticamente</button>
+        <button class="button--enviar" id="button--porEdad">Por edad</button>
     </section>
-
-    <h4 id="ordenando">Ordenando: </h4>
-    <table id="tabla">
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Edad</th>
-                <th>Urgencia</th>
-            </tr>
-        </thead>
-        <tbody id="bodyTabla">
-        </tbody>
-    </table>
-
-
-    <script src="js/main.js"></script>
+    <script src="JS/main.js"></script>
 </body>
 </html>
