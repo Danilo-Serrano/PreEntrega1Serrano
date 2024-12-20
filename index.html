@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
     
@@ -13,13 +14,14 @@
             <img class="var--image" src="cruz.avif">
             <h1 class="var--tittle">Hospital Mendoza</h1>
         </section>
-    
+    <h4 id="fechaActual">Fecha</h4>
         <table id="mainTabla">
             <thead class="styleTabla">
                 <tr class="styleTabla" >
                     <td class="style--cells">Nombre</td>
                     <td class="style--cells">Edad</td>
                     <td class="style--cells">Urgencia</td>
+                    <td class="style--cells">Precio Consulta</td>
                 </tr>
             </thead>
 
@@ -33,23 +35,48 @@
 
         <form id="form">
             <input id="input__nombre" type="text" placeholder="Nombre">
-            <input id="input__edad" type="number" placeholder="Edad">
+            <input id="input__edad" type="text" placeholder="Edad" maxlength="2">
             <input id="input__urgencia" type="text" placeholder="Urgencia">
+            <input id="input__precio" type="number" placeholder="Precio">
             <input class="button--enviar" type="submit">
         </form>
-<!---->
+
         <h3 class="subtitulos">Eliminar Turnos</h3>
         <form id="form2">
         <input id="input__eliminar" type="text" placeholder="Nombre">
         <input class="button--enviar" type="submit">
         </form>
-    <!---->
+
         <h3 class="subtitulos">Ordenar</h3>
         <button class="button--enviar" id="button--alfabeticamente">Alfabeticamente</button>
         <button class="button--enviar" id="button--porEdad">Por edad</button>
+        <button class="button--enviar" id="button--ordenarPrecio">Por precio</button>
+        <button class="button--enviar" id="button--vaciarArray">Vaciar Turnos</button>
+        <h3 class="subtitulos">Total Precio Consultas</h3>
+        <h5 class="total">$</h5><h4 class="total" id="totalACambiar"></h4>
+        <h3 class="subtitulos">Turnos pasados</h3>
     </section>
+
+    
+
+    <table id="mainTabla">
+        <thead class="styleTabla">
+            <tr class="styleTabla" >
+                <td class="style--cells">Nombre</td>
+                <td class="style--cells">Edad</td>
+                <td class="style--cells">Urgencia</td>
+                <td class="style--cells">Precio Consulta</td>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody2">
+
+        </tbody>
+    </table>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.5.0/build/global/luxon.min.js"></script>
     <script src="js/main.js"></script>
-    <!---->
-    <div></div>
 </body>
 </html>

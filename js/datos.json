@@ -1,0 +1,33 @@
+[
+    {
+        "nombre": "Carlos",
+        "edad": 26,
+        "urgencia": "urgente",
+        "precioconsulta": 2500
+    },{
+        "nombre": "Eder",
+        "edad": 33,
+        "urgencia": "menor",
+        "precioconsulta": 500
+    },{
+        "nombre": "Diego",
+        "edad": 60,
+        "urgencia": "urgente",
+        "precioconsulta": 12500
+    },{
+        "nombre": "Ivan",
+        "edad": 77,
+        "urgencia": "superficial",
+        "precioconsulta": 900
+    },{
+        "nombre": "Pablo",
+        "edad": 19,
+        "urgencia": "programado",
+        "precioconsulta": 500
+    },{
+        "nombre": "Luiz",
+        "edad": 98,
+        "urgencia": "urgente",
+        "precioconsulta": 20000
+    }
+]
