@@ -265,7 +265,7 @@ let opcion;
 
     mostrarFechaActual()
 
-fetch("../js/datos.json")
+fetch("./js/datos.json")
 
 .then((response) =>{
     return response.json();
